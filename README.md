@@ -19,7 +19,7 @@ A) Using Docker (Recommended)
 
 ### Step 1: Clone the repository
 ```bash
-git clone
+git clone https://github.com/isingh27/ecom.git
 ```
 
 ### Step 2: Run the project in Docker
@@ -35,7 +35,7 @@ docker run -p 3000:3000 e-commerce-webapp
 B) Without Docker
 ### Step 1: Clone the repository
 ```bash
-git clone
+git clone https://github.com/isingh27/ecom.git
 ```
 
 ### Step 2: Install dependencies
