@@ -4,6 +4,10 @@ Simple E-commerce webapp built using React 16.
 
 Uses Matrerial UI Components and Redux
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e5032fdd-bb4c-4068-ad2c-2f8d52060b52/deploy-status)](https://ecomwebappis.netlify.app)
+
+Live Demo: [E-Commerce WebApp](https://ecomwebappis.netlify.app)
+
 ### Prerequisites
 
 1. Node.js v 16.20.2 (Recommended)
