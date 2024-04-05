@@ -27,7 +27,7 @@ const Navbar = () => {
 
   // timer
   return (
-    <AppBar position="sticky" className={classes.appBar} color="inherit">
+    <AppBar position="sticky" className={classes.appBar} color="primary">
       <Toolbar className={classes.toolbar}>
         <CustomTooltip title="To homepage">
           <Typography
