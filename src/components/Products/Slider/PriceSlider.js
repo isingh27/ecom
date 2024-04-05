@@ -6,7 +6,7 @@ const PriceSlider = memo(
   ({ min = 10, max = 150, filterPrice, setFilterPrice }) => {
     const classes = useStyles();
 
-    const valuetext = (filterPrice) => `${filterPrice} €`;
+    const valuetext = (filterPrice) => `${filterPrice} $`;
 
     const handleChange = (event, newValue) => {
       setFilterPrice(newValue);
@@ -21,23 +21,23 @@ const PriceSlider = memo(
     const marks = [
       {
         value: minRoundedValue,
-        label: `${minRoundedValue} €`,
+        label: `${minRoundedValue} $`,
       },
       {
         value: thirdValue || 335,
-        label: `${Math.floor(thirdValue)} €`,
+        label: `${Math.floor(thirdValue)} $`,
       },
       {
         value: twoThirdsValue,
-        label: `${Math.ceil(twoThirdsValue)} €`,
+        label: `${Math.ceil(twoThirdsValue)} $`,
       },
       {
         value: maxRoundedValue,
-        label: `${maxRoundedValue} €`,
+        label: `${maxRoundedValue} $`,
       },
     ];
 
-    // custom label € märgiga
+    // custom label $ märgiga
     return (
       <div className={classes.root}>
         <Typography id="range-slider" align="center" gutterBottom>

@@ -10,9 +10,9 @@ import {
 
 const getTotals = () => ({ type: GET_TOTALS });
 
-const addToCart = (id, title, price, description, category, image, qty) => ({
+const addToCart = (id, title, price, description, category, thumbnail, qty) => ({
   type: ADD_TO_CART,
-  payload: { id, title, price, description, category, image, qty },
+  payload: { id, title, price, description, category, thumbnail, qty },
 });
 
 const increase = (id) => ({ type: INCREASE, payload: id });

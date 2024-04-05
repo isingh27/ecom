@@ -21,10 +21,10 @@ const CartProvider = ({ children }) => {
     dispatch({ type: 'get_totals' });
   }, [state.cart]);
 
-  const addToCart = (id, title, price, description, category, image, qty) => {
+  const addToCart = (id, title, price, description, category, thumbnail, qty) => {
     dispatch({
       type: 'add_to_cart',
-      payload: { id, title, price, description, category, image, qty },
+      payload: { id, title, price, description, category, thumbnail, qty },
     });
   };
 

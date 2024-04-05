@@ -19,7 +19,7 @@ import allActions from '../../../store/actions';
 import Modal from '../../Modal/Modal';
 import useStyles from './styles';
 
-const Product = ({ id, title, price, description, category, image, qty }) => {
+const Product = ({ id, title, price, description, category, thumbnail, qty }) => {
   const [showModal, setShowModal] = useState(false);
   const [expanded, setExpanded] = useState(null);
   const classes = useStyles();
@@ -36,7 +36,7 @@ const Product = ({ id, title, price, description, category, image, qty }) => {
         classes={{
           root: classes.media,
         }}
-        image={image}
+        image={thumbnail}
         title={title}
         onClick={() => setShowModal(!showModal)}
       />
@@ -94,7 +94,7 @@ const Product = ({ id, title, price, description, category, image, qty }) => {
               className={classes.price}
               title={price.toFixed(2)}
             >
-              €{price.toFixed(2)}
+              ${price.toFixed(2)}
             </Typography>
           </Grid>
         </Grid>
@@ -111,7 +111,7 @@ const Product = ({ id, title, price, description, category, image, qty }) => {
                 price,
                 description,
                 category,
-                image,
+                thumbnail,
                 qty
               )
             )
@@ -124,7 +124,7 @@ const Product = ({ id, title, price, description, category, image, qty }) => {
         </IconButton>
       </CardActions>
       {showModal && (
-        <Modal showModal={showModal} setShowModal={setShowModal} img={image} />
+        <Modal showModal={showModal} setShowModal={setShowModal} img={thumbnail} />
       )}
     </Card>
   );

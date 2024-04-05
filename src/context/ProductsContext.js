@@ -1,7 +1,8 @@
 import { createContext, useContext, useEffect, useReducer } from 'react';
 import productsReducer from './productsReducer';
 
-const url = 'https://fakestoreapi.com/products';
+const url = process.env.REACT_APP_PRODUCT_API || 'https://dummyjson.com/products';
+
 
 const initialProductState = {
   loading: false,
@@ -20,7 +21,7 @@ const ProductsProvider = ({ children }) => {
       try {
         const response = await fetch(url);
         const data = await response.json();
-        dispatch({ type: 'display_items', payload: data });
+        dispatch({ type: 'display_items', payload: data.products });
       } catch (error) {
         console.log(error);
       }

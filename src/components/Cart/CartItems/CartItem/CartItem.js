@@ -16,7 +16,7 @@ import { CustomTooltip, Modal } from '../../..';
 import allActions from '../../../../store/actions';
 import useStyles from './styles';
 
-const CartItem = memo(({ id, image, title, price, qty }) => {
+const CartItem = memo(({ id, thumbnail, title, price, qty }) => {
   const [showModal, setShowModal] = useState(false);
   const classes = useStyles();
   const dispatch = useDispatch();
@@ -26,7 +26,7 @@ const CartItem = memo(({ id, image, title, price, qty }) => {
   return (
     <Card raised>
       <CardMedia
-        image={image}
+        image={thumbnail}
         alt={title}
         className={classes.media}
         classes={{
@@ -46,7 +46,7 @@ const CartItem = memo(({ id, image, title, price, qty }) => {
           variant="h6"
           title={totalPrice}
         >
-          {totalPrice} €
+          {totalPrice} $
         </Typography>
       </CardContent>
       <CardActions className={classes.cardActions}>
@@ -97,7 +97,7 @@ const CartItem = memo(({ id, image, title, price, qty }) => {
         Remove
       </Button>
       {showModal && (
-        <Modal showModal={showModal} setShowModal={setShowModal} img={image} />
+        <Modal showModal={showModal} setShowModal={setShowModal} img={thumbnail} />
       )}
     </Card>
   );

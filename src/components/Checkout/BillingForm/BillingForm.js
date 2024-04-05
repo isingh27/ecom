@@ -61,10 +61,10 @@ const BillingForm = memo(
                     onChange={(e) => setShippingOption(+e.target.value)}
                   >
                     <option value={5}>
-                      Standard (up to 7 days)&nbsp; +5 €{' '}
+                      Standard (up to 7 days)&nbsp; +5 ${' '}
                     </option>
                     <option value={10}>
-                      Express&nbsp;&nbsp;&nbsp;(up to 3 days)&nbsp; +10 €
+                      Express&nbsp;&nbsp;&nbsp;(up to 3 days)&nbsp; +10 $
                     </option>
                   </Select>
                 </FormControl>

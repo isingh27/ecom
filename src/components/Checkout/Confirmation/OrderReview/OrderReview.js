@@ -29,15 +29,15 @@ const OrderReview = ({ shippingOption }) => {
           <ListItem className={classes.productItem} key={id}>
             <ListItemText primary={title} secondary={`Quantity: ${qty}`} />
             <Typography variant="body1">
-              {(qty * price).toFixed(2)} €
+              {(qty * price).toFixed(2)} $
             </Typography>
           </ListItem>
         ))}
         <ListItem className={classes.total}>
           <ListItemText primary="Total:" secondary={`${amount} items`} />
           <ListItemText
-            primary={`${(totalPrice + shippingOption).toFixed(2)} €`}
-            secondary={`${shippingOption} € delivery fee included`}
+            primary={`${(totalPrice + shippingOption).toFixed(2)} $`}
+            secondary={`${shippingOption} $ delivery fee included`}
             align="right"
           />
         </ListItem>

@@ -39,7 +39,7 @@ const BillingReview = ({
     {
       id: 3,
       label: 'Shipping method:',
-      value: `${shippingMethodText(shippingOption)} ${shippingOption} €`,
+      value: `${shippingMethodText(shippingOption)} ${shippingOption} $`,
     },
   ];
 

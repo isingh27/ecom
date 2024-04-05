@@ -38,7 +38,7 @@ const Navbar = () => {
             color="inherit"
           >
             <Shop color="primary" />
-            E-Shop
+            E-Commerce App | IS 
           </Typography>
         </CustomTooltip>
         {pathname === '/' ? (

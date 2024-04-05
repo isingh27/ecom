@@ -33,7 +33,7 @@ const CartItems = () => {
           align="center"
           title={totalPrice}
         >
-          Subtotal: <strong>{totalPrice}&nbsp;€</strong>
+          Subtotal: <strong>{totalPrice}&nbsp;$</strong>
         </Typography>
         <Grid
           container

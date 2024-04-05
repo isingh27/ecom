@@ -87,7 +87,7 @@ const Checkout = () => {
             endIcon={<ArrowForwardIcon />}
             size="large"
           >
-            Pay {(totalPrice + shippingOption).toFixed(2)} €
+            Pay {(totalPrice + shippingOption).toFixed(2)} $
           </Button>
         </div>
       )}
