@@ -46,6 +46,7 @@ const Search = memo(() => {
             {...params}
             label="Search products..."
             variant="outlined"
+            style = {{ backgroundColor: 'white' }}
             InputProps={{ ...params.InputProps }}
             value={query}
           />
